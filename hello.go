@@ -1,9 +1,10 @@
 package main
 
 import (
-	"example/hello/others"
 	"fmt"
 	"time"
+
+	"github.com/StanleyAnyas/learning_go/others"
 )
 
 func main() {
