@@ -1,0 +1,5 @@
+package others
+
+func MainFuncForInterfaces() {
+
+}
