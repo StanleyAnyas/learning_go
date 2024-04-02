@@ -46,6 +46,7 @@ func main() {
 	others.MainFuncForVariadic()
 	others.MainForStruct()
 	others.MainFuncForInterfaces()
+	others.MainFuncForInterfaceExercise()
 }
 
 func multiply(a, b int) int {

@@ -1,6 +1,7 @@
 package others
 
 import (
+	"fmt"
 	"math/rand"
 	// "sync"
 )
@@ -59,6 +60,10 @@ func performOperation[K any](done <-chan K, num <-chan int, n int) <-chan int {
 	return operatedNums
 }
 
+func returnTwoValues(num int) (int, error) {
+	return num * 2, nil
+}
+
 func mainForExercise() []int {
 	arr := []int{}
 	done := make(chan struct{}, 1)
@@ -68,6 +73,10 @@ func mainForExercise() []int {
 
 	for finalized := range performOperation(done, randomNum, 10) {
 		arr = append(arr, finalized)
+	}
+
+	if num, err := returnTwoValues(2); err == nil {
+		fmt.Println("returnTwoValues returned:", num)
 	}
 
 	return arr
