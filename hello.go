@@ -37,16 +37,13 @@ func main() {
 	fmt.Println("elements inside the linked list are ", result)
 
 	others.MainForOthers()
-
-	arrForMap := []int{21, 13, 45, 21, 21, 56, 87, 66, 87, 53, 87, 99, 99, 99, 99, 99, 99, 99, 99}
-	findMostOccuringValue, numOfTimesItOccured := others.MostOccuringValue(arrForMap)
-
-	fmt.Println("most occuring value is:", findMostOccuringValue, "and it occured:", numOfTimesItOccured)
-
-	others.MainFuncForVariadic()
-	others.MainForStruct()
-	others.MainFuncForInterfaces()
-	others.MainFuncForInterfaceExercise()
+	// others.MainFuncForVariadic()
+	// others.MainForStruct()
+	// others.MainFuncForInterfaces()
+	// others.MainFuncForInterfaceExercise()
+	// others.MainFuncForReaders()
+	// others.MainFuncForMaps()
+	others.MainFuncForError()
 }
 
 func multiply(a, b int) int {
